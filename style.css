@@ -52,9 +52,31 @@ ul .img:hover {
   color: #FCCA46;
   padding-left: 25%;
   padding-top: 8%;
-  display: flex;
+}
+#prochainement .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 3px;
+  background: #FCCA46;
+  animation: wave 1.3s linear infinite;
+}
+#prochainement .dot:nth-child(2) {
+  animation-delay: -1.1s;
+}
+#prochainement .dot:nth-child(3) {
+  animation-delay: -0.9s;
 }
 
+@keyframes wave {
+  0%, 60%, 100% {
+    transform: initial;
+  }
+  30% {
+    transform: translateY(-15px);
+  }
+}
 @-webkit-keyframes shake {
   from {
     -webkit-transform: rotate(15deg);
