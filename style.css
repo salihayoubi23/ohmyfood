@@ -1,5 +1,6 @@
 body {
   margin: auto;
+  margin-top: 0px;
   width: auto;
   height: auto;
 }
@@ -16,28 +17,53 @@ header h1 {
   padding-top: 10px;
 }
 
-ul {
+#menus {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   justify-content: center;
-  transition: 1s;
 }
-ul li {
-  list-style: none;
-}
-ul .img {
+#menus .menu {
   height: 600px;
   width: 500px;
   margin: 20px;
-  opacity: 0.7;
   box-shadow: 1px 1px 2px #000;
+  text-align: center;
 }
-ul .img:hover {
+#menus .menu .note {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 0px;
+}
+#menus .menu h2 {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 20px;
+}
+#menus .zoom:hover {
   transform: scale(1.3);
-  box-shadow: 2px 2px 2px #000;
   z-index: 2;
   opacity: 1;
+}
+#menus #menuun {
+  background-color: #fcdfdb;
+  font-family: "Seymour One", sans-serif;
+  font-size: 18px;
+}
+#menus #menuun h2 {
+  padding-top: 0px;
+}
+#menus a, #menus a:hover, #menus a:visited, #menus a:active {
+  text-decoration: none;
+}
+#menus #menudeux {
+  background-color: #fff5fe;
+}
+#menus #menutrois {
+  background-color: #edefef;
+}
+#menus #menuquatre {
+  background-color: #fdfffd;
 }
 
 #prochainement {
@@ -111,6 +137,17 @@ footer a, footer a:hover, footer a:visited, footer a:active {
 
 .menu {
   text-align: center;
+}
+
+.containerun {
+  background: #fcdfdb;
+  text-align: center;
+}
+.containerun .title {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=style.css.map */
