@@ -165,15 +165,43 @@ header {
     .menu {
         text-align: center;
     }
+    .titre{
+        text-align :center;
+    }
 .containerun {
     background: rgb(252,223,219);
-    text-align: center;
+    margin-left: 300px;
+    padding-bottom: 50px;
+    width: 900px;
+    height: 1200px;
+    margin-bottom: 150px;
+
+    .hautDePage {
+        text-align: center;
+    }
 
     .title {
         display: flex;
         justify-content: center;
         justify-content: space-between;
         justify-content: space-around;
+    }
+
+    .choix {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .dessrt {
+        text-align: left;
+        padding-left: 45px;
+    }
+
+    .piedDeContainer {
+        margin: 50px;
+        text-align: center;
     }
 }
 
