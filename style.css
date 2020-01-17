@@ -8,7 +8,8 @@ body {
 header {
   background: #569c87;
   height: 100px;
-  margin: 0px;
+  margin-top: 0px;
+  padding-top: 0px;
 }
 header h1 {
   color: #FCCA46;
@@ -29,16 +30,12 @@ header h1 {
   margin: 20px;
   box-shadow: 1px 1px 2px #000;
   text-align: center;
-}
-#menus .menu .note {
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 0px;
-}
-#menus .menu h2 {
-  text-align: center;
-  padding-top: 200px;
+  padding-top: 180px;
   padding-bottom: 20px;
+}
+#menus .menu a, #menus .menu a:hover, #menus .menu a:visited, #menus .menu a:active {
+  text-decoration: none;
+  color: inherit;
 }
 #menus .zoom:hover {
   transform: scale(1.3);
@@ -47,23 +44,73 @@ header h1 {
 }
 #menus #menuun {
   background-color: #fcdfdb;
-  font-family: "Seymour One", sans-serif;
-  font-size: 18px;
+  font-size: 30px;
+}
+#menus #menuun .note {
+  text-align: center;
+  margin-top: 80px;
+  height: 90px;
 }
 #menus #menuun h2 {
-  padding-top: 0px;
+  margin-top: 0px;
+  font-family: "Zhi Mang Xing", cursive;
+  color: #492026;
 }
-#menus a, #menus a:hover, #menus a:visited, #menus a:active {
-  text-decoration: none;
+#menus #menuun h3 {
+  font-family: "Short Stack", cursive;
+  font-size: 50px;
 }
 #menus #menudeux {
   background-color: #fff5fe;
 }
+#menus #menudeux h2 {
+  margin-top: 130px;
+  font-family: "Oleo Script", cursive;
+  font-size: 3em;
+  background: linear-gradient(to right, #c77412, #0906f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: lighter;
+}
+#menus #menudeux h3 {
+  font-family: "PT Serif", serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #c77412;
+}
 #menus #menutrois {
   background-color: #edefef;
 }
+#menus #menutrois h2 {
+  font-size: 3em;
+  background: linear-gradient(to right, #0431DF, #0887FB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Dancing Script", cursive;
+  font-weight: lighter;
+}
+#menus #menutrois h3 {
+  font-family: "Bad Script", cursive;
+  font-size: 3em;
+  font-weight: bold;
+  color: #0887FB;
+}
 #menus #menuquatre {
   background-color: #fdfffd;
+}
+#menus #menuquatre h2 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 3em;
+  background: linear-gradient(to right, #45993E, #BFFF7E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: lighter;
+}
+#menus #menuquatre h3 {
+  font-family: "Bad Script", cursive;
+  font-size: 3em;
+  font-weight: bold;
+  color: #72bf56;
 }
 
 #prochainement {
@@ -116,7 +163,7 @@ footer {
   justify-content: space-between;
   background: #569c87;
   display: flex;
-  height: 100px;
+  height: 70px;
   padding-right: 50px;
   padding-left: 50px;
   position: fixed;
@@ -129,7 +176,7 @@ footer h3 {
   font-size: 30px;
   margin-top: 15px;
   margin-right: 10px;
-  -webkit-animation: shake 1s ease-in-out 0.1s infinite alternate;
+  -webkit-animation: shake 0.1s ease-in-out 0.5s infinite alternate;
 }
 footer a, footer a:hover, footer a:visited, footer a:active {
   text-decoration: none;
@@ -143,36 +190,146 @@ footer a, footer a:hover, footer a:visited, footer a:active {
   text-align: center;
 }
 
-.containerun {
+.containerun, .containertrois, .containerquatre, .containerdeux {
   background: #fcdfdb;
-  margin-left: 300px;
+  margin-left: 230px;
   padding-bottom: 50px;
-  width: 900px;
-  height: 1200px;
+  width: 1050px;
+  height: 1100px;
   margin-bottom: 150px;
 }
-.containerun .hautDePage {
-  text-align: center;
-}
-.containerun .title {
+.containerun .title, .containertrois .title, .containerquatre .title, .containerdeux .title {
   display: flex;
   justify-content: center;
   justify-content: space-between;
   justify-content: space-around;
 }
-.containerun .choix {
+.containerun .title h2, .containertrois .title h2, .containerquatre .title h2, .containerdeux .title h2 {
+  font-family: "Short Stack", cursive;
+  color: #492026;
+}
+.containerun .title h2:after, .containertrois .title h2:after, .containerquatre .title h2:after, .containerdeux .title h2:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: #492026;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+.containerun .title h2:hover:after, .containertrois .title h2:hover:after, .containerquatre .title h2:hover:after, .containerdeux .title h2:hover:after {
+  width: 100%;
+}
+.containerun .hautDePage, .containertrois .hautDePage, .containerquatre .hautDePage, .containerdeux .hautDePage {
+  text-align: center;
+  font-family: "Zhi Mang Xing", cursive;
+  color: #492026;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+.containerun .choix, .containertrois .choix, .containerquatre .choix, .containerdeux .choix {
   display: flex;
   justify-content: space-between;
-  padding-left: 45px;
-  padding-right: 45px;
+  padding-left: 60px;
+  padding-right: 68px;
 }
-.containerun .dessrt {
+.containerun .dessrt, .containertrois .dessrt, .containerquatre .dessrt, .containerdeux .dessrt {
   text-align: left;
   padding-left: 45px;
 }
-.containerun .piedDeContainer {
+.containerun .piedDeContainer, .containertrois .piedDeContainer, .containerquatre .piedDeContainer, .containerdeux .piedDeContainer {
   margin: 50px;
   text-align: center;
+}
+.containerun p, .containertrois p, .containerquatre p, .containerdeux p {
+  font-family: "Short Stack", cursive;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.containerdeux {
+  background: #fff5fe;
+  padding-top: 90px;
+  font-family: "Bad Script", cursive;
+  font-style: normal;
+}
+.containerdeux h1 {
+  margin: 50px;
+  font-size: 2em;
+  background: linear-gradient(to right, #c77412, #0906f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: lighter;
+}
+.containerdeux h2 {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 0px;
+  white-space: nowrap;
+  font-family: "Oleo Script", cursive;
+  font-style: normal;
+}
+.containerdeux .entree {
+  margin: 55px;
+  color: #c67412;
+}
+.containerdeux .entree img {
+  margin: 5px;
+}
+.containerdeux .plat {
+  color: #a6699a;
+  margin: 55px;
+}
+.containerdeux .dessert {
+  color: #6e4ccc;
+  margin: 55px;
+}
+.containerdeux p {
+  font-family: "Bad Script", cursive;
+  font-style: normal;
+  padding: 10px;
+}
+.containerdeux .dessrt {
+  padding-left: 70px;
+}
+
+.containertrois, .containerquatre {
+  background: #edefef;
+}
+.containertrois h1, .containerquatre h1 {
+  font-size: 4em;
+  background: linear-gradient(to right, #0431DF, #0887FB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Dancing Script", cursive;
+  font-weight: lighter;
+  padding: 70px;
+  text-align: center;
+}
+.containertrois .title h2, .containerquatre .title h2 {
+  font-family: "Bad Script", cursive;
+  font-style: normal;
+}
+.containertrois .choix, .containerquatre .choix {
+  margin-left: 70px;
+  margin-right: 90px;
+}
+.containertrois p, .containerquatre p {
+  font-family: "Handlee", cursive;
+  font-size: 1.5em;
+  padding: 0px;
+  margin-bottom: 5px;
+}
+
+.containerquatre {
+  background: #fdfffd;
+}
+.containerquatre h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 5em;
+  background: linear-gradient(to right, #45993E, #BFFF7E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: lighter;
 }
 
 /*# sourceMappingURL=style.css.map */

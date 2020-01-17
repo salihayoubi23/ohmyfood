@@ -8,7 +8,8 @@ body{
 header {
     background: rgb(86,156,135);
     height: 100px;
-    margin: 0px;
+    margin-top: 0px;
+    padding-top:0px;
     
 
     h1 {
@@ -31,19 +32,12 @@ header {
         margin: 20px;
         box-shadow: 1px 1px 2px #000;
         text-align: center;
+        padding-top: 180px;
+        padding-bottom: 20px;
 
-
-
-        .note {
-            text-align: center;
-            padding-top: 100px;
-            padding-bottom: 0px;
-        }
-
-        h2 {
-            text-align: center;
-            padding-top: 200px;
-            padding-bottom: 20px;
+        a, a:hover, a:visited, a:active {
+            text-decoration: none;
+            color: inherit;
         }
     }
 
@@ -57,28 +51,89 @@ header {
 
     #menuun {
         background-color: rgb(252,223,219);
-        font-family: 'Seymour One', sans-serif;
-        font-size: 18px;
+        font-size: 30px;
+
+
+
+        .note {
+            text-align: center;
+            margin-top: 80px;
+            height: 90px;
+        }
 
         h2 {
-            padding-top: 0px;
+            margin-top: 0px;
+            font-family: 'Zhi Mang Xing', cursive;
+            color: rgb(73,32,38);
+        }
+
+        h3 {
+            font-family: 'Short Stack', cursive;
+            font-size: 50px;
         }
     }
 
-    a, a:hover, a:visited, a:active {
-        text-decoration: none;
-    }
+
 
     #menudeux {
         background-color: rgb(255,245,254);
+
+        h2 {
+            margin-top: 130px;
+            font-family: 'Oleo Script', cursive;
+            font-size: 3em;
+            background: linear-gradient(to right, rgb(199,116,18), rgb(9,6,245));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: lighter;
+        }
+
+        h3 {
+            font-family: 'PT Serif', serif;
+            font-size: 50px;
+            font-weight: bold;
+            color: rgb(199,116,18);
+        }
     }
 
     #menutrois {
         background-color: rgb(237,239,239);
+
+        h2 {
+            font-size: 3em;
+            background: linear-gradient(to right, #0431DF, #0887FB);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Dancing Script', cursive;
+            font-weight: lighter;
+        }
+
+        h3 {
+            font-family: 'Bad Script', cursive;
+            font-size: 3em;
+            font-weight: bold;
+            color: #0887FB;
+        }
     }
 
     #menuquatre {
         background-color: rgb(253,255,253);
+
+        h2 {
+            font-family: 'Kaushan Script', cursive;
+            font-size: 3em;
+            background: linear-gradient(to right, #45993E, #BFFF7E);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: lighter;
+        }
+
+        h3 {
+            font-family: 'Bad Script', cursive;
+            font-size: 3em;
+            font-weight: bold;
+            color: rgb(114,191,86);
+        }
     }
 }
 
@@ -141,7 +196,7 @@ header {
         justify-content: space-between;
         background: rgb(86,156,135);
         display: flex;
-        height: 100px;
+        height: 70px;
         padding-right: 50px;
         padding-left: 50px;
         position: fixed;
@@ -154,7 +209,7 @@ header {
             font-size: 30px;
             margin-top: 15px;
             margin-right: 10px;
-            -webkit-animation: shake 1s ease-in-out .1s infinite alternate
+            -webkit-animation: shake .1s ease-in-out .5s infinite alternate
         }
 
         a, a:hover, a:visited, a:active {
@@ -170,28 +225,52 @@ header {
     }
 .containerun {
     background: rgb(252,223,219);
-    margin-left: 300px;
+    margin-left: 230px;
     padding-bottom: 50px;
-    width: 900px;
-    height: 1200px;
+    width: 1050px;
+    height: 1100px;
     margin-bottom: 150px;
-
-    .hautDePage {
-        text-align: center;
-    }
 
     .title {
         display: flex;
         justify-content: center;
         justify-content: space-between;
         justify-content: space-around;
+
+        h2 {
+            font-family: 'Short Stack', cursive;
+            color: rgb(73,32,38);
+
+            &:after {
+                content: '';
+                display: block;
+                height: 3px;
+                width: 0;
+                background: rgb(73,32,38);
+                transition: width .5s ease, background-color .5s ease;
+            }
+
+            &:hover:after {
+                width: 100%;
+            }
+        }
     }
+
+    .hautDePage {
+        text-align: center;
+        font-family: 'Zhi Mang Xing', cursive;
+        color: rgb(73,32,38);
+        font-size: 1.5em;
+        font-weight: 100;
+    }
+
+
 
     .choix {
         display: flex;
         justify-content: space-between;
-        padding-left: 45px;
-        padding-right: 45px;
+        padding-left: 60px;
+        padding-right: 68px;
     }
 
     .dessrt {
@@ -203,6 +282,117 @@ header {
         margin: 50px;
         text-align: center;
     }
+
+    p {
+        font-family: 'Short Stack', cursive;
+        font-style: italic;
+        font-size: 14px;
+    }
 }
 
+        .containerdeux {
+            @extend .containerun;
+            background: rgb(255,245,254);
+            padding-top: 90px;
+            font-family: 'Bad Script', cursive;
+            font-style: normal;
 
+            h1 {
+                margin: 50px;
+                font-size: 2em;
+                background: linear-gradient(to right, rgb(199,116,18), rgb(9,6,245));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-weight: lighter;
+            }
+
+
+            h2 {
+                margin-left: 15px;
+                margin-right: 15px;
+                padding: 0px;
+                white-space: nowrap;
+                font-family: 'Oleo Script', cursive;
+                font-style: normal;
+            }
+
+            .entree {
+                img {
+                    margin: 5px;
+                }
+
+                margin: 55px;
+                color: rgb(198,116,18);
+            }
+
+            .plat {
+                color: rgb(166,105,154);
+                margin: 55px;
+            }
+
+            .dessert {
+                color: rgb(110,76,204);
+                margin: 55px;
+            }
+
+            .choix {
+            }
+
+            p {
+                font-family: 'Bad Script', cursive;
+                font-style: normal;
+                padding: 10px;
+            }
+
+            .dessrt {
+                padding-left: 70px;
+            }
+            // peut etre faudrais changer la police des p faudra trouver la bonne
+        }
+
+        .containertrois {
+            @extend .containerun;
+            background: rgb(237,239,239);
+
+            h1 {
+                font-size: 4em;
+                background: linear-gradient(to right, #0431DF, #0887FB);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-family: 'Dancing Script', cursive;
+                font-weight: lighter;
+                padding: 70px;
+                text-align: center;
+            }
+
+            .title h2 {
+                font-family: 'Bad Script', cursive;
+                font-style: normal;
+            }
+
+            .choix {
+                margin-left: 70px;
+                margin-right: 90px;
+            }
+
+            p {
+                font-family: 'Handlee', cursive;
+                font-size: 1.5em;
+                padding: 0px;
+                margin-bottom: 5px;
+            }
+        }
+
+        .containerquatre {
+            @extend .containertrois;
+            background: rgb(253,255,253);
+
+            h1 {
+                font-family: 'Kaushan Script', cursive;
+                font-size: 5em;
+                background: linear-gradient(to right, #45993E, #BFFF7E);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-weight: lighter;
+            }
+        }
