@@ -126,15 +126,16 @@ header h1 {
   border-radius: 8px;
   background: #569c87;
 }
-#prochainement h2 {
+#prochainement h4 {
   color: #FCCA46;
   padding-left: 25%;
-  padding-top: 8%;
+  padding-top: 10%;
+  font-size: 20px;
 }
 #prochainement .dot {
   display: inline-block;
-  width: 8px;
-  height: 8px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   margin-right: 3px;
   background: #FCCA46;
@@ -372,7 +373,7 @@ footer a, footer a:hover, footer a:visited, footer a:active {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   #prochainement {
-    margin-left: 30%;
+    margin-left: 15%;
   }
 
   .containerun, .containerdeux, .containertrois, .containerquatre {
@@ -408,6 +409,123 @@ footer a, footer a:hover, footer a:visited, footer a:active {
     width: 40%;
     height: 60%;
     margin: 10px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  #prochainement {
+    width: 260px;
+    height: 70px;
+    margin: 20%;
+    margin-top: 20px;
+  }
+  #prochainement h4 {
+    align-content: center;
+    padding-bottom: 30px;
+  }
+
+  @-webkit-keyframes shake {
+    from {
+      -webkit-transform: rotate(10deg);
+    }
+    to {
+      -webkit-transform: rotate(-10deg);
+      -webkit-transform-origin: left left;
+    }
+  }
+  footer h3 {
+    font-size: 20px;
+    -webkit-animation: shake 0.1s ease-in-out 0.5s infinite alternate;
+  }
+
+  .containerun, .containerdeux, .containertrois, .containerquatre {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    margin-bottom: 50px;
+  }
+  .containerun .title, .containerdeux .title, .containertrois .title, .containerquatre .title {
+    display: flex;
+    justify-content: center;
+  }
+  .containerun .title h2, .containerdeux .title h2, .containertrois .title h2, .containerquatre .title h2 {
+    font-size: 14px;
+    text-align: center;
+  }
+  .containerun .title img, .containerdeux .title img, .containertrois .title img, .containerquatre .title img {
+    width: 40%;
+    height: 40%;
+  }
+  .containerun .hautDePage, .containerdeux .hautDePage, .containertrois .hautDePage, .containerquatre .hautDePage {
+    width: auto;
+    font-size: 1em;
+    font-weight: 100;
+  }
+  .containerun .hautDePage img, .containerdeux .hautDePage img, .containertrois .hautDePage img, .containerquatre .hautDePage img {
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+  }
+  .containerun .choix, .containerdeux .choix, .containertrois .choix, .containerquatre .choix {
+    width: auto;
+    height: auto;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .containerun .entree .title img, .containerdeux .entree .title img, .containertrois .entree .title img, .containerquatre .entree .title img {
+    width: 43%;
+    height: 40%;
+  }
+  .containerun .dessrt, .containerdeux .dessrt, .containertrois .dessrt, .containerquatre .dessrt {
+    text-align: left;
+    padding-left: 15px;
+  }
+  .containerun .piedDeContainer, .containerdeux .piedDeContainer, .containertrois .piedDeContainer, .containerquatre .piedDeContainer {
+    margin: 5px;
+    width: auto;
+  }
+
+  .containertrois, .containerquatre {
+    margin: 0px;
+    margin-bottom: 50px;
+  }
+  .containertrois h1, .containerquatre h1 {
+    font-size: 45px;
+    margin: 5px;
+  }
+  .containertrois .title, .containerquatre .title {
+    height: 40px;
+  }
+  .containertrois .title h2, .containerquatre .title h2 {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 0px;
+  }
+  .containertrois .title img, .containerquatre .title img {
+    padding: 0;
+    margin: 0px;
+  }
+  .containertrois .entree .title img, .containerquatre .entree .title img {
+    width: 35%;
+  }
+  .containertrois .choix, .containerquatre .choix {
+    margin-left: 6px;
+    margin-right: 16px;
+  }
+  .containertrois .choix p, .containerquatre .choix p {
+    font-size: 1em;
+    padding: 10px;
+    font-weight: 500;
+  }
+
+  .containerquatre {
+    height: auto;
+  }
+  .containerquatre .entree .title {
+    margin-top: 10px;
+  }
+  .containerquatre .entree .title img {
+    width: 43%;
+    margin: 0px;
   }
 }
 
