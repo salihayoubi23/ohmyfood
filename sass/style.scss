@@ -465,3 +465,52 @@ footer {
         }
     }
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+    #prochainement {
+        margin-left: 30%;
+    }
+
+    .containerun {
+        margin: 10px;
+        width: auto;
+        height: 1080px;
+        margin-bottom: 150px;
+    }
+
+    .containertrois {
+        height: 1200px;
+    }
+
+    .containerquatre {
+        width: auto;
+        height: 1200px;
+        margin-bottom: 150px;
+        margin-right: 0px;
+
+        .title {
+            display: flex;
+            justify-content: center;
+
+            h2 {
+                white-space: nowrap;
+            }
+
+            img {
+                width: 35%;
+                height: 60%;
+                margin: 10px;
+            }
+        }
+
+        .entree {
+            .title {
+                img {
+                    width: 40%;
+                    height: 60%;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+
+}

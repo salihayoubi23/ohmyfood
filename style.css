@@ -370,4 +370,45 @@ footer a, footer a:hover, footer a:visited, footer a:active {
   background: #91db6a;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  #prochainement {
+    margin-left: 30%;
+  }
+
+  .containerun, .containerdeux, .containertrois, .containerquatre {
+    margin: 10px;
+    width: auto;
+    height: 1080px;
+    margin-bottom: 150px;
+  }
+
+  .containertrois, .containerquatre {
+    height: 1200px;
+  }
+
+  .containerquatre {
+    width: auto;
+    height: 1200px;
+    margin-bottom: 150px;
+    margin-right: 0px;
+  }
+  .containerquatre .title {
+    display: flex;
+    justify-content: center;
+  }
+  .containerquatre .title h2 {
+    white-space: nowrap;
+  }
+  .containerquatre .title img {
+    width: 35%;
+    height: 60%;
+    margin: 10px;
+  }
+  .containerquatre .entree .title img {
+    width: 40%;
+    height: 60%;
+    margin: 10px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
