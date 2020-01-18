@@ -1,5 +1,5 @@
 body {
-  margin: auto;
+  margin: 0px;
   margin-top: 0px;
   width: auto;
   height: auto;
@@ -8,14 +8,16 @@ body {
 header {
   background: #569c87;
   height: 100px;
-  margin-top: 0px;
-  padding-top: 0px;
+  padding: 10px;
 }
 header h1 {
   color: #FCCA46;
-  font-size: 60px;
+  font-size: 4em;
   text-align: center;
-  padding-top: 10px;
+  margin: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: -1px;
 }
 
 #menus {
@@ -36,6 +38,9 @@ header h1 {
 #menus .menu a, #menus .menu a:hover, #menus .menu a:visited, #menus .menu a:active {
   text-decoration: none;
   color: inherit;
+}
+#menus .zoom {
+  opacity: 0.5;
 }
 #menus .zoom:hover {
   transform: scale(1.3);
@@ -58,7 +63,7 @@ header h1 {
 }
 #menus #menuun h3 {
   font-family: "Short Stack", cursive;
-  font-size: 50px;
+  font-size: 40px;
 }
 #menus #menudeux {
   background-color: #fff5fe;
@@ -67,7 +72,7 @@ header h1 {
   margin-top: 130px;
   font-family: "Oleo Script", cursive;
   font-size: 3em;
-  background: linear-gradient(to right, #c77412, #0906f5);
+  background: linear-gradient(to right, #c0741c, #0906f5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: lighter;
@@ -101,7 +106,7 @@ header h1 {
 #menus #menuquatre h2 {
   font-family: "Kaushan Script", cursive;
   font-size: 3em;
-  background: linear-gradient(to right, #45993E, #BFFF7E);
+  background: linear-gradient(to right, #45993E, #dafcb0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: lighter;
@@ -174,6 +179,7 @@ footer {
 footer h3 {
   color: #FCCA46;
   font-size: 30px;
+  font-weight: lighter;
   margin-top: 15px;
   margin-right: 10px;
   -webkit-animation: shake 0.1s ease-in-out 0.5s infinite alternate;
@@ -214,7 +220,7 @@ footer a, footer a:hover, footer a:visited, footer a:active {
   height: 3px;
   width: 0;
   background: #492026;
-  transition: width 0.5s ease, background-color 0.5s ease;
+  transition: width 0.7s ease, background-color 0.5s ease;
 }
 .containerun .title h2:hover:after, .containertrois .title h2:hover:after, .containerquatre .title h2:hover:after, .containerdeux .title h2:hover:after {
   width: 100%;
@@ -255,7 +261,7 @@ footer a, footer a:hover, footer a:visited, footer a:active {
 .containerdeux h1 {
   margin: 50px;
   font-size: 2em;
-  background: linear-gradient(to right, #c77412, #0906f5);
+  background: linear-gradient(to right, #c0741c, #0906f5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: lighter;
@@ -270,18 +276,36 @@ footer a, footer a:hover, footer a:visited, footer a:active {
 }
 .containerdeux .entree {
   margin: 55px;
-  color: #c67412;
+  color: #c67312;
 }
 .containerdeux .entree img {
   margin: 5px;
+}
+.containerdeux .entree h2 {
+  color: #c67312;
+}
+.containerdeux .entree h2:after {
+  background: #c67312;
 }
 .containerdeux .plat {
   color: #a6699a;
   margin: 55px;
 }
+.containerdeux .plat h2 {
+  color: #a6699a;
+}
+.containerdeux .plat h2:after {
+  background: #a6699a;
+}
 .containerdeux .dessert {
   color: #6e4ccc;
   margin: 55px;
+}
+.containerdeux .dessert h2 {
+  color: #6e4ccc;
+}
+.containerdeux .dessert h2:after {
+  background: #6e4ccc;
 }
 .containerdeux p {
   font-family: "Bad Script", cursive;
@@ -306,8 +330,19 @@ footer a, footer a:hover, footer a:visited, footer a:active {
   text-align: center;
 }
 .containertrois .title h2, .containerquatre .title h2 {
-  font-family: "Bad Script", cursive;
+  font-family: "Handlee", cursive;
   font-style: normal;
+  color: black;
+  font-weight: 500;
+}
+.containertrois .entree h2:after, .containerquatre .entree h2:after {
+  background: #0228dd;
+}
+.containertrois .plat h2:after, .containerquatre .plat h2:after {
+  background: #0a6fee;
+}
+.containertrois .dessert h2:after, .containerquatre .dessert h2:after {
+  background: #299cf1;
 }
 .containertrois .choix, .containerquatre .choix {
   margin-left: 70px;
@@ -326,10 +361,13 @@ footer a, footer a:hover, footer a:visited, footer a:active {
 .containerquatre h1 {
   font-family: "Kaushan Script", cursive;
   font-size: 5em;
-  background: linear-gradient(to right, #45993E, #BFFF7E);
+  background: linear-gradient(to right, #45993E, #dafcb0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: lighter;
+}
+.containerquatre .title h2:after {
+  background: #91db6a;
 }
 
 /*# sourceMappingURL=style.css.map */

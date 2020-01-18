@@ -1,22 +1,35 @@
+$primary: rgb(86,156,135);
+$backroundmenu1: rgb(252,223,219);
+$colortitresmenuunh2: rgb(73,32,38);
+$backroundmenu2: rgb(255,245,254);
+$colormenudeuxh2: linear-gradient(to right, rgb(192,116,28), rgb(9,6,245));
+$backroundmenu3: rgb(237,239,239);
+$colormenu3h2: linear-gradient(to right, #0431DF, #0887FB);
+$backroundmenu4: rgb(253,255,253);
+$colortitres4h2: linear-gradient(to right, #45993E, rgb(218,252,176));
+
 body{
-    margin: auto;
+    margin: 0px;
     margin-top:0px;
     width:auto;
     height:auto;
     
 }
 header {
-    background: rgb(86,156,135);
+    background: $primary;
     height: 100px;
-    margin-top: 0px;
-    padding-top:0px;
-    
+    padding: 10px;
+
+
 
     h1 {
         color: #FCCA46;
-        font-size: 60px;
+        font-size: 4em;
         text-align: center;
-        padding-top: 10px;
+        margin:10px;
+        font-family: sans-serif;
+        font-weight: bold;
+        letter-spacing: -1px;
     }
 }
 
@@ -35,6 +48,7 @@ header {
         padding-top: 180px;
         padding-bottom: 20px;
 
+
         a, a:hover, a:visited, a:active {
             text-decoration: none;
             color: inherit;
@@ -42,6 +56,8 @@ header {
     }
 
     .zoom {
+        opacity: 0.5;
+
         &:hover {
             transform: scale(1.3);
             z-index: 2;
@@ -50,7 +66,7 @@ header {
     }
 
     #menuun {
-        background-color: rgb(252,223,219);
+        background-color: $backroundmenu1;
         font-size: 30px;
 
 
@@ -64,25 +80,25 @@ header {
         h2 {
             margin-top: 0px;
             font-family: 'Zhi Mang Xing', cursive;
-            color: rgb(73,32,38);
+            color: $colortitresmenuunh2;
         }
 
         h3 {
             font-family: 'Short Stack', cursive;
-            font-size: 50px;
+            font-size: 40px;
         }
     }
 
 
 
     #menudeux {
-        background-color: rgb(255,245,254);
+        background-color: $backroundmenu2;
 
         h2 {
             margin-top: 130px;
             font-family: 'Oleo Script', cursive;
             font-size: 3em;
-            background: linear-gradient(to right, rgb(199,116,18), rgb(9,6,245));
+            background: $colormenudeuxh2;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: lighter;
@@ -97,11 +113,11 @@ header {
     }
 
     #menutrois {
-        background-color: rgb(237,239,239);
+        background-color: $backroundmenu3;
 
         h2 {
             font-size: 3em;
-            background: linear-gradient(to right, #0431DF, #0887FB);
+            background: $colormenu3h2;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-family: 'Dancing Script', cursive;
@@ -117,12 +133,12 @@ header {
     }
 
     #menuquatre {
-        background-color: rgb(253,255,253);
+        background-color: $backroundmenu4;
 
         h2 {
             font-family: 'Kaushan Script', cursive;
             font-size: 3em;
-            background: linear-gradient(to right, #45993E, #BFFF7E);
+            background: $colortitres4h2;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: lighter;
@@ -192,30 +208,31 @@ header {
     }
 
 
-    footer {
-        justify-content: space-between;
-        background: rgb(86,156,135);
-        display: flex;
-        height: 70px;
-        padding-right: 50px;
-        padding-left: 50px;
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        left: 0;
+footer {
+    justify-content: space-between;
+    background: $primary;
+    display: flex;
+    height: 70px;
+    padding-right: 50px;
+    padding-left: 50px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
 
-        h3 {
-            color: #FCCA46;
-            font-size: 30px;
-            margin-top: 15px;
-            margin-right: 10px;
-            -webkit-animation: shake .1s ease-in-out .5s infinite alternate
-        }
-
-        a, a:hover, a:visited, a:active {
-            text-decoration: none;
-        }
+    h3 {
+        color: #FCCA46;
+        font-size: 30px;
+        font-weight:lighter;
+        margin-top: 15px;
+        margin-right: 10px;
+        -webkit-animation: shake .1s ease-in-out .5s infinite alternate
     }
+
+    a, a:hover, a:visited, a:active {
+        text-decoration: none;
+    }
+}
 
     .menu {
         text-align: center;
@@ -224,7 +241,7 @@ header {
         text-align :center;
     }
 .containerun {
-    background: rgb(252,223,219);
+    background: $backroundmenu1;
     margin-left: 230px;
     padding-bottom: 50px;
     width: 1050px;
@@ -247,7 +264,7 @@ header {
                 height: 3px;
                 width: 0;
                 background: rgb(73,32,38);
-                transition: width .5s ease, background-color .5s ease;
+                transition: width .7s ease, background-color .5s ease;
             }
 
             &:hover:after {
@@ -290,109 +307,161 @@ header {
     }
 }
 
-        .containerdeux {
-            @extend .containerun;
-            background: rgb(255,245,254);
-            padding-top: 90px;
-            font-family: 'Bad Script', cursive;
-            font-style: normal;
+.containerdeux {
+    @extend .containerun;
+    background: $backroundmenu2;
+    padding-top: 90px;
+    font-family: 'Bad Script', cursive;
+    font-style: normal;
 
-            h1 {
-                margin: 50px;
-                font-size: 2em;
-                background: linear-gradient(to right, rgb(199,116,18), rgb(9,6,245));
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font-weight: lighter;
-            }
+    h1 {
+        margin: 50px;
+        font-size: 2em;
+        background: $colormenudeuxh2;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: lighter;
+    }
 
 
-            h2 {
-                margin-left: 15px;
-                margin-right: 15px;
-                padding: 0px;
-                white-space: nowrap;
-                font-family: 'Oleo Script', cursive;
-                font-style: normal;
-            }
+    h2 {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 0px;
+        white-space: nowrap;
+        font-family: 'Oleo Script', cursive;
+        font-style: normal;
+    }
 
-            .entree {
-                img {
-                    margin: 5px;
-                }
-
-                margin: 55px;
-                color: rgb(198,116,18);
-            }
-
-            .plat {
-                color: rgb(166,105,154);
-                margin: 55px;
-            }
-
-            .dessert {
-                color: rgb(110,76,204);
-                margin: 55px;
-            }
-
-            .choix {
-            }
-
-            p {
-                font-family: 'Bad Script', cursive;
-                font-style: normal;
-                padding: 10px;
-            }
-
-            .dessrt {
-                padding-left: 70px;
-            }
-            // peut etre faudrais changer la police des p faudra trouver la bonne
+    .entree {
+        img {
+            margin: 5px;
         }
 
-        .containertrois {
-            @extend .containerun;
-            background: rgb(237,239,239);
+        margin: 55px;
+        color: rgb(198,115,18);
 
-            h1 {
-                font-size: 4em;
-                background: linear-gradient(to right, #0431DF, #0887FB);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font-family: 'Dancing Script', cursive;
-                font-weight: lighter;
-                padding: 70px;
-                text-align: center;
-            }
+        h2 {
+            color: rgb(198,115,18);
 
-            .title h2 {
-                font-family: 'Bad Script', cursive;
-                font-style: normal;
-            }
-
-            .choix {
-                margin-left: 70px;
-                margin-right: 90px;
-            }
-
-            p {
-                font-family: 'Handlee', cursive;
-                font-size: 1.5em;
-                padding: 0px;
-                margin-bottom: 5px;
+            &:after {
+                background: rgb(198,115,18);
             }
         }
+    }
 
-        .containerquatre {
-            @extend .containertrois;
-            background: rgb(253,255,253);
+    .plat {
+        color: rgb(166,105,154);
+        margin: 55px;
 
-            h1 {
-                font-family: 'Kaushan Script', cursive;
-                font-size: 5em;
-                background: linear-gradient(to right, #45993E, #BFFF7E);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font-weight: lighter;
+        h2 {
+            color: rgb(166,105,154);
+
+            &:after {
+                background: rgb(166,105,154);
             }
         }
+    }
+
+    .dessert {
+        color: rgb(110,76,204);
+        margin: 55px;
+
+        h2 {
+            color: rgb(110,76,204);
+
+            &:after {
+                background: rgb(110,76,204);
+            }
+        }
+    }
+
+    .choix {
+    }
+
+    p {
+        font-family: 'Bad Script', cursive;
+        font-style: normal;
+        padding: 10px;
+    }
+
+    .dessrt {
+        padding-left: 70px;
+    }
+    // peut etre faudrais changer la police des p faudra trouver la bonne
+}
+
+.containertrois {
+    @extend .containerun;
+    background: $backroundmenu3;
+
+    h1 {
+        font-size: 4em;
+        background: $colormenu3h2;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Dancing Script', cursive;
+        font-weight: lighter;
+        padding: 70px;
+        text-align: center;
+    }
+
+    .title h2 {
+        font-family: 'Handlee', cursive; //'Bad Script', cursive;
+        font-style: normal;
+        color: black;
+        font-weight: 500;
+    }
+
+    .entree h2 {
+        &:after {
+            background: rgb(2,40,221);
+        }
+    }
+
+    .plat h2 {
+        &:after {
+            background: rgb(10,111,238);
+        }
+    }
+
+    .dessert h2 {
+        &:after {
+            background: rgb(41,156,241);
+        }
+    }
+
+
+    .choix {
+        margin-left: 70px;
+        margin-right: 90px;
+    }
+
+    p {
+        font-family: 'Handlee', cursive;
+        font-size: 1.5em;
+        padding: 0px;
+        margin-bottom: 5px;
+    }
+}
+
+.containerquatre {
+    @extend .containertrois;
+    background: $backroundmenu4;
+
+    h1 {
+        font-family: 'Kaushan Script', cursive;
+        font-size: 5em;
+        background: $colortitres4h2;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: lighter;
+    }
+
+    .title h2 {
+
+        &:after {
+            background: rgb(145,219,106);
+        }
+    }
+}
