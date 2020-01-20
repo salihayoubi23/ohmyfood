@@ -9,6 +9,7 @@ header {
   background: #569c87;
   height: 100px;
   padding: 10px;
+  width: 100%;
 }
 header h1 {
   color: #FCCA46;
@@ -170,8 +171,6 @@ footer {
   background: #569c87;
   display: flex;
   height: 70px;
-  padding-right: 50px;
-  padding-left: 50px;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -199,9 +198,9 @@ footer a, footer a:hover, footer a:visited, footer a:active {
 
 .containerun, .containertrois, .containerquatre, .containerdeux {
   background: #fcdfdb;
-  margin-left: 230px;
+  margin: auto;
   padding-bottom: 50px;
-  width: 1050px;
+  width: 70%;
   height: 1100px;
   margin-bottom: 150px;
 }
@@ -371,170 +370,47 @@ footer a, footer a:hover, footer a:visited, footer a:active {
   background: #91db6a;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1280px) {
-  .menu {
-    height: 400px;
-    width: 300px;
-  }
-
+@media screen and (max-width: 899px) {
   #prochainement {
-    margin-left: 35%;
+    margin: auto;
+    margin-bottom: 100px;
   }
 
-  .containerun, .containerdeux, .containertrois, .containerquatre {
-    margin: 10px;
-    width: auto;
-    height: 1080px;
-    margin-bottom: 150px;
-  }
-
-  .containertrois, .containerquatre {
-    height: 1200px;
-  }
-
-  .containerquatre {
-    width: auto;
-    height: 1200px;
-    margin-bottom: 150px;
-    margin-right: 0px;
-  }
-  .containerquatre .title {
-    display: flex;
-    justify-content: center;
-  }
-  .containerquatre .title h2 {
-    white-space: nowrap;
-  }
-  .containerquatre .title img {
-    width: 35%;
-    height: 60%;
-    margin: 10px;
-  }
-  .containerquatre .entree .title img {
-    width: 40%;
-    height: 60%;
-    margin: 10px;
-  }
-}
-@media (min-width: 481px) and (max-width: 767px) {
-  #prochainement {
-    width: 260px;
-    height: 70px;
-    margin: 20%;
-    margin-top: 20px;
-  }
-  #prochainement h4 {
-    align-content: center;
-    padding-bottom: 30px;
-  }
-
-  @-webkit-keyframes shake {
-    from {
-      -webkit-transform: rotate(10deg);
-    }
-    to {
-      -webkit-transform: rotate(-10deg);
-      -webkit-transform-origin: left left;
-    }
-  }
-  footer h3 {
-    font-size: 20px;
-    -webkit-animation: shake 0.1s ease-in-out 0.5s infinite alternate;
+  header {
+    width: 100%;
   }
 
   .containerun, .containerdeux, .containertrois, .containerquatre {
     width: 100%;
-    height: auto;
-    margin: 0px;
-    margin-bottom: 50px;
-  }
-  .containerun .menu, .containerdeux .menu, .containertrois .menu, .containerquatre .menu {
-    height: 400px;
-    width: 300px;
-  }
-  .containerun .title, .containerdeux .title, .containertrois .title, .containerquatre .title {
-    display: flex;
-    justify-content: center;
-  }
-  .containerun .title h2, .containerdeux .title h2, .containertrois .title h2, .containerquatre .title h2 {
-    font-size: 14px;
-    text-align: center;
+    height: 1200px;
   }
   .containerun .title img, .containerdeux .title img, .containertrois .title img, .containerquatre .title img {
-    width: 40%;
+    width: 50%;
     height: 40%;
   }
-  .containerun .hautDePage, .containerdeux .hautDePage, .containertrois .hautDePage, .containerquatre .hautDePage {
-    width: auto;
-    font-size: 1em;
-    font-weight: 100;
-  }
-  .containerun .hautDePage img, .containerdeux .hautDePage img, .containertrois .hautDePage img, .containerquatre .hautDePage img {
+  .containerun .title img.droit, .containerdeux .title img.droit, .containertrois .title img.droit, .containerquatre .title img.droit {
     margin-top: 15px;
-    width: 50px;
-    height: 50px;
   }
-  .containerun .choix, .containerdeux .choix, .containertrois .choix, .containerquatre .choix {
-    width: auto;
-    height: auto;
-    padding-left: 6px;
-    padding-right: 6px;
+  .containerun .title h2, .containerdeux .title h2, .containertrois .title h2, .containerquatre .title h2 {
+    text-align: center;
+    margin-top: 5px;
   }
-  .containerun .entree .title img, .containerdeux .entree .title img, .containertrois .entree .title img, .containerquatre .entree .title img {
-    width: 43%;
+
+  .containerdeux {
+    margin: auto;
+  }
+  .containerdeux .title img {
+    width: 35%;
     height: 40%;
   }
-  .containerun .dessrt, .containerdeux .dessrt, .containertrois .dessrt, .containerquatre .dessrt {
-    text-align: left;
-    padding-left: 15px;
-  }
-  .containerun .piedDeContainer, .containerdeux .piedDeContainer, .containertrois .piedDeContainer, .containerquatre .piedDeContainer {
-    margin: 5px;
-    width: auto;
+  .containerdeux .entree .title img {
+    width: 30%;
+    height: 40%;
   }
 
-  .containertrois, .containerquatre {
-    margin: 0px;
-    margin-bottom: 50px;
-  }
-  .containertrois h1, .containerquatre h1 {
-    font-size: 45px;
-    margin: 5px;
-  }
-  .containertrois .title, .containerquatre .title {
-    height: 40px;
-  }
-  .containertrois .title h2, .containerquatre .title h2 {
-    font-size: 17px;
-    font-weight: bold;
-    margin-top: 0px;
-  }
   .containertrois .title img, .containerquatre .title img {
-    padding: 0;
-    margin: 0px;
-  }
-  .containertrois .entree .title img, .containerquatre .entree .title img {
     width: 35%;
-  }
-  .containertrois .choix, .containerquatre .choix {
-    margin-left: 6px;
-    margin-right: 16px;
-  }
-  .containertrois .choix p, .containerquatre .choix p {
-    font-size: 1em;
-    padding: 10px;
-    font-weight: 500;
-  }
-
-  .containerquatre {
-    height: auto;
-  }
-  .containerquatre .entree .title {
-    margin-top: 10px;
-  }
-  .containerquatre .entree .title img {
-    width: 43%;
-    margin: 0px;
+    height: 40%;
   }
 }
 

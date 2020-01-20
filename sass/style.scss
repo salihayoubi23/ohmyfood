@@ -19,6 +19,7 @@ header {
     background: $primary;
     height: 100px;
     padding: 10px;
+    width:100%;
 
 
 
@@ -214,8 +215,7 @@ footer {
     background: $primary;
     display: flex;
     height: 70px;
-    padding-right: 50px;
-    padding-left: 50px;
+    
     position: fixed;
     bottom: 0;
     right: 0;
@@ -243,9 +243,9 @@ footer {
     }
 .containerun {
     background: $backroundmenu1;
-    margin-left: 230px;
+    margin:auto;
     padding-bottom: 50px;
-    width: 1050px;
+    width: 70%;
     height: 1100px;
     margin-bottom: 150px;
 
@@ -466,213 +466,65 @@ footer {
         }
     }
 }
-@media all and (min-width: 1024px) and (max-width: 1280px) {
-    .menu {
-        height: 400px;
-        width: 300px;
+
+@media screen and (max-width: 899px){
+    #prochainement{
+        margin:auto;
+        margin-bottom:100px;
     }
-
-    #prochainement {
-        margin-left: 35%;
-    }
-
-    .containerun {
-        margin: 10px;
-        width: auto;
-        height: 1080px;
-        margin-bottom: 150px;
-    }
-
-    .containertrois {
-        height: 1200px;
-    }
-
-    .containerquatre {
-        width: auto;
-        height: 1200px;
-        margin-bottom: 150px;
-        margin-right: 0px;
-
-        .title {
-            display: flex;
-            justify-content: center;
-
-            h2 {
-                white-space: nowrap;
-            }
-
-            img {
-                width: 35%;
-                height: 60%;
-                margin: 10px;
-            }
-        }
-
-        .entree {
-            .title {
-                img {
-                    width: 40%;
-                    height: 60%;
-                    margin: 10px;
-                }
-            }
-        }
-    }
-}
-@media (min-width: 481px) and (max-width: 767px) {
-
-    #prochainement {
-        width: 260px;
-        height: 70px;
-        margin: 20%;
-        margin-top:20px;
-       
-        h4{
-            align-content:center;
-            padding-bottom:30px;
-            
-        }
-    }
-    @-webkit-keyframes shake {
-        from {
-            -webkit-transform: rotate(10deg);
-        }
-
-        to {
-            -webkit-transform: rotate(-10deg);
-            -webkit-transform-origin: left left;
-        }
-    }
-    footer {
-        h3 {
-            font-size: 20px;
-            -webkit-animation: shake .1s ease-in-out .5s infinite alternate
-        }
+    header{
+        width:100%;
     }
     .containerun {
         width: 100%;
-        height: auto;
-        margin: 0px;
-        margin-bottom: 50px;
-
-        .menu {
-            height: 400px;
-            width: 300px;
-        }
+        height: 1200px;
 
         .title {
-            display: flex;
-            justify-content: center;
-
-            h2 {
-                font-size: 14px;
-                text-align: center;
+            img {
+                width: 50%;
+                height: 40%;
             }
 
+            img.droit {
+                margin-top: 15px;
+            }
+
+
+            h2 {
+                text-align: center;
+                margin-top: 5px;
+            }
+        }
+    }
+    .containerdeux {
+        
+        margin:auto;
+        .title {
             img {
-                width: 40%;
+                width: 35%;
                 height: 40%;
             }
         }
 
-
-
-        .hautDePage {
-            width: auto;
-            font-size: 1em;
-            font-weight: 100;
-
-            img {
-                margin-top: 15px;
-                width: 50px;
-                height: 50px;
-            }
-        }
-
-        .choix {
-            width: auto;
-            height: auto;
-            padding-left: 6px;
-            padding-right: 6px;
-        }
-
         .entree {
             .title {
                 img {
-                    width: 43%;
+                    width: 30%;
                     height: 40%;
                 }
             }
         }
-
-
-        .dessrt {
-            text-align: left;
-            padding-left: 15px;
-        }
-
-        .piedDeContainer {
-            margin: 5px;
-            width: auto;
-        }
     }
     .containertrois {
-        margin: 0px;
-        margin-bottom: 50px;
-
-        h1 {
-            font-size: 45px;
-            margin: 5px;
-        }
-
         .title {
-            height: 40px;
-
-            h2 {
-                font-size: 17px;
-                font-weight: bold;
-                margin-top: 0px;
-            }
-
             img {
-                padding: 0;
-                margin: 0px;
-            }
-        }
-
-        .entree {
-            .title {
-                img {
-                    width: 35%;
-                }
-            }
-        }
-
-        .choix {
-            margin-left: 6px;
-            margin-right: 16px;
-
-            p {
-                font-size: 1em;
-                padding: 10px;
-                font-weight: 500;
+                width: 35%;
+                height: 40%;
             }
         }
     }
-    .containerquatre {
-        height: auto;
-        
+   
+}
+@media screen and (max-width: 899px){
 
-        .entree {
-            .title {
-                margin-top: 10px;
-
-                img {
-                    width: 43%;
-                    margin: 0px;
-                }
-            }
-        }
-
-    }
 }
