@@ -8,18 +8,14 @@ $colormenu3h2: linear-gradient(to right, #0431DF, #0887FB);
 $backroundmenu4: rgb(253,255,253);
 $colortitres4h2: linear-gradient(to right, #45993E, rgb(218,252,176));
 
-body{
-    margin: 0px;
-    margin-top:0px;
-    width:auto;
-    height:auto;
-    
-}
+
+
 header {
     background: $primary;
     height: 100px;
     padding: 10px;
     width:100%;
+    
 
 
 
@@ -37,6 +33,7 @@ header {
 #menus {
     display: flex;
     justify-content: space-around;
+    justify-content:space-between;
     flex-wrap: wrap;
     justify-content: center;
 
@@ -157,10 +154,10 @@ header {
     #prochainement {
         width: 350px;
         height: 100px;
-        margin: 10%;
-        margin-left: 40%;
+        margin: auto;
         border-radius: 8px;
         background: rgb(86,156,135);
+        margin-bottom:10%;
 
         h4 {
             color: #FCCA46;
@@ -215,11 +212,12 @@ footer {
     background: $primary;
     display: flex;
     height: 70px;
-    
+    margin-top:10px;
     position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
+    margin:0;
 
     h3 {
         color: #FCCA46;
@@ -235,18 +233,20 @@ footer {
     }
 }
 
+
     .menu {
         text-align: center;
     }
     .titre{
         text-align :center;
+        margin:3%;
     }
 .containerun {
     background: $backroundmenu1;
     margin:auto;
     padding-bottom: 50px;
-    width: 70%;
-    height: 1100px;
+    width: 80%;
+    height: 1250px;
     margin-bottom: 150px;
 
     .title {
@@ -280,6 +280,7 @@ footer {
         color: rgb(73,32,38);
         font-size: 1.5em;
         font-weight: 100;
+        margin:10%;
     }
 
 
@@ -287,24 +288,27 @@ footer {
     .choix {
         display: flex;
         justify-content: space-between;
-        padding-left: 60px;
-        padding-right: 68px;
+        padding-left: 6%;
+        padding-right: 8%;
     }
 
     .dessrt {
         text-align: left;
-        padding-left: 45px;
+        padding-left: 6%;
     }
 
-    .piedDeContainer {
-        margin: 50px;
-        text-align: center;
+    .piedDeContainer{
+        width:50%;
+        height:10%;
+        margin: auto;
+ 
     }
 
     p {
         font-family: 'Short Stack', cursive;
         font-style: italic;
         font-size: 14px;
+        margin:15px;
     }
 }
 
@@ -467,64 +471,361 @@ footer {
     }
 }
 
-@media screen and (max-width: 899px){
-    #prochainement{
-        margin:auto;
-        margin-bottom:100px;
+
+@media screen and (max-width: 1124px){
+    html,body{
+        margin:0;
+        padding:0;
     }
-    header{
-        width:100%;
+    #menus {
+        justify-content: space-around;
+
+        .menu {
+            width: 400px;
+            height: 500px;
+        }
     }
-    .containerun {
-        width: 100%;
-        height: 1200px;
+   #prochainement{
+       margin-bottom:100px;
+   }
+        .containerun {
+            margin: auto;
+            
+            height: 1180px;
+            margin-bottom: 150px;
+             
+
+            .title {
+                margin:10px;
+                img {
+                    width: 35%;
+                    height: 45%;
+                }
+
+                .droit {
+                    margin-top: 15px;
+                }
+
+                h2 {
+                    text-align: center;
+                    margin-top: 10px;
+                }
+            }
+            p{
+                margin:15px
+            }
+        }
+
+        .containerdeux {
+            .title {
+                img {
+                    width: 38%;
+                }
+            }
+
+            .entree {
+                .title {
+                    img {
+                        width: 30%;
+                    }
+                }
+            }
+        }
+    .containertrois {
+        width: 90%;
 
         .title {
+            margin:15px;
             img {
-                width: 50%;
-                height: 40%;
+                width: 30%;
             }
-
-            img.droit {
-                margin-top: 15px;
-            }
-
 
             h2 {
                 text-align: center;
-                margin-top: 5px;
+                margin-top: 10px;
+                white-space: nowrap;
+            }
+        }
+        p{
+            margin:5px;
+            
+        }
+    }
+   
+    }
+@media screen and (max-width: 916px) {
+    .containerun {
+        height: 1100px;
+
+        .hautDePage {
+            h1 {
+                text-align: center;
+                font-size: 1.5em;
+                font-weight: 500;
+            }
+
+            img {
+                width: 10%;
+                margin-top: 5%;
+            }
+        }
+
+        .title {
+            img {
+                width: 35%;
+                height: 40%;
+            }
+        }
+    }
+    .piedDeContainer {
+        margin: 0;
+
+        img {
+            width: 80%;
+            margin-left: 30%;
+            margin: 0;
+        }
+    }
+    
+}
+@media screen and (max-width: 905px){
+   #menus{
+      .menu{
+          width:600px;
+          height:600px;
+      }
+   }
+   .containerun{
+       .piedDeContainer{
+           margin:0;
+           img{
+               width:90%;
+               margin-left:40%;
+               margin:0;
+           }
+       }
+   }
+ }
+@media screen and (max-width:746px){
+    .containerun {
+        .piedDeContainer {
+            padding:0;
+            img {
+                width:90%;
+                margin: 10%;
+                padding: 0;
             }
         }
     }
     .containerdeux {
-        
-        margin:auto;
-        .title {
-            img {
-                width: 35%;
-                height: 40%;
+        padding-top: 5%;
+        height:1200px;
+
+        .hautDePage {
+            margin: 5%;
+        }
+        .entree{
+            .title{
+                img{
+                    width:40%;
+                    margin:5%;
+                }
             }
         }
+        .title {
+            img {
+                width: 40%;
+            }
 
-        .entree {
-            .title {
-                img {
-                    width: 30%;
-                    height: 40%;
-                }
+            h2 {
+                white-space: pre-wrap;
+                margin-top: -15px;
             }
         }
     }
     .containertrois {
-        .title {
+       .choix{
+           margin-left:5px;
+           padding-left:3%;
+           padding-right:5%;
+       }
+    }
+}
+@media screen and (max-width:656px){
+    #menus{
+        #menutrois{
+            padding-top:40%;
+        }
+    }
+    .containerun {
+        .piedDeContainer {
             img {
-                width: 35%;
-                height: 40%;
+                width: 90%;
+                margin-left: 40%;
+                
             }
         }
     }
-   
+    .containerdeux{
+        height:1200px;
+    }
+    .containertrois{
+        height:1200px;
+        .title{
+            margin:15px;
+            h2{
+                white-space:pre-wrap;
+                padding-top:0px;
+                margin-top:0px;
+                text-align:center;
+            }
+        }
+        p{
+            margin-bottom:20px;
+        }
+    }
+    .containerquatre{
+        h1{
+            font-size:2em;
+        }
+        height:1200px;
+    }
 }
-@media screen and (max-width: 899px){
+@media screen and (max-width:576px){
+    #menus{
+      .menu{
+          width:400px;
+          height:500px;
+      }
+
+    }
+    .containerun {
+        height:1200px;
+        .title {
+            img {
+                width: 30%;
+            }
+
+            h2 {
+                margin-top: 1px;
+            }
+        }
+
+        .piedDeContainer {
+           
+
+            img {
+                margin:5px;
+                width: 90%;
+                margin-left: 50%;
+               
+            }
+        }
+    }
+    .containerdeux {
+        height: 1400px;
+
+        .dessrt {
+            padding-left: 5%;
+
+            p {
+                text-align: left;
+            }
+        }
+    }
+    .containertrois{
+        height:1300px;
+    }
+}
+@media screen and (max-width:440px){
+    #menus {
+        .menu {
+            width: 400px;
+            height: 500px;
+            padding-top: 5px;
+        }
+
+
+        .zoom {
+            margin: auto;
+        }
+
+         #menuquatre {
+          padding-top:35%;
+        }
+    }
+   
+    footer {
+        height:70px;
+        h3 {  
+            font-size: 15px;
+            margin-right: 30px;
+            margin-left:30px;
+            padding-bottom:5px;
+        }
+    }
+    .containerun{
+        width:90%;
+    }
+    .containerdeux {
+        .hautDePage {
+            h1 {
+                font-size: 1em;
+                margin: auto;
+            }
+        }
+
+        .choix {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        p {
+            margin: 5px;
+        }
+
+        .title {
+            h2 {
+                margin: 0px;
+                white-space: nowrap;
+            }
+
+            img {
+                display: none;
+            }
+        }
+    }
+    .containertrois {
+        height:1000px;
+        h1 {
+            font-size: 2em;
+            padding-bottom: 35px;
+            padding:30px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 21px;
+            white-space: nowrap;
+        }
+
+        p {
+            font-size: 14px;
+            
+        }
+        .choix{
+            margin-right:5px;
+        }
+        
+    }
 
 }
+@media screen and (max-width:360px){
+    .containerun{
+        width:auto;
+    }
+}
+
+
+
+    
